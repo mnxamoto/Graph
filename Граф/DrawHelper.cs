@@ -7,9 +7,9 @@ using System.Drawing;
 
 namespace Граф
 {
-    static class DrawHelper
+    class DrawHelper
     {
-        public static Point[] coordinatesPolygon(Point center, int R, int N)
+        public Point[] coordinatesPolygon(Point center, int R, int N)
         {
             Point[] result = new Point[N];
 
@@ -23,7 +23,7 @@ namespace Граф
             return result;
         }
 
-        public static Point сoordinatesPointOnLine(Point p1, Point p2, int R)
+        public Point сoordinatesPointOnLine(Point p1, Point p2, int R)
         {
             int x1 = p1.X;
             int y1 = p1.Y;
@@ -53,7 +53,7 @@ namespace Граф
         /// <param name="center">Центра круга</param>
         /// <param name="R">Радиус круга</param>
         /// <returns></returns>
-        public static Rectangle rectangleFromCircle(Point center, int R)
+        public Rectangle rectangleFromCircle(Point center, int R)
         {
             Point location = new Point(center.X - R, center.Y - R);
             Size size = new Size(R * 2, R * 2);
@@ -69,7 +69,7 @@ namespace Граф
         /// <param name="B">Конец прямой</param>
         /// <param name="R">Длина перпендикуляра</param>
         /// <returns></returns>
-        public static Point perpendicularToLine(Point A, Point B, Point C, double R)
+        public Point perpendicularToLine(Point A, Point B, Point C, double R)
         {
             int x_A = A.X;
             int y_A = A.Y;
@@ -86,21 +86,21 @@ namespace Граф
             return new Point(x_D, y_D);
         }
 
-        public static Point center2point(Point p1, Point p2, double s)
+        public Point center2point(Point p1, Point p2, double s)
         {
             int x = center2x(p1.X, p2.X, s);
             int y = center2x(p1.Y, p2.Y, s);
             return new Point(x, y);
         }
 
-        public static Point center2point(Point p1, Point p2)
+        public Point center2point(Point p1, Point p2)
         {
             int x = center2x(p1.X, p2.X);
             int y = center2x(p1.Y, p2.Y);
             return new Point(x, y);
         }
 
-        public static int center2x(int x1, int x2, double s)
+        public int center2x(int x1, int x2, double s)
         {
             return Convert.ToInt32(x1 + ((x2 - x1) * s));
         }
@@ -111,7 +111,7 @@ namespace Граф
         /// <param name="x1">Первый Х</param>
         /// <param name="x2">Второй Х</param>
         /// <returns></returns>
-        public static int center2x(int x1, int x2)
+        public int center2x(int x1, int x2)
         {
             return x1 + ((x2 - x1) / 2);
         }
@@ -122,7 +122,7 @@ namespace Граф
         /// <param name="p1">Первая точка</param>
         /// <param name="p2">Вторая точка</param>
         /// <returns></returns>
-        public static double distanceBetweenTwoPoints(Point p1, Point p2)
+        public double distanceBetweenTwoPoints(Point p1, Point p2)
         {
             return Math.Sqrt(Math.Pow(p2.X - p1.X, 2) + Math.Pow(p2.Y - p1.Y, 2));
         }
