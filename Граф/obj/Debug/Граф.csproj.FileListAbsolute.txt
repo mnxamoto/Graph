@@ -1,0 +1,9 @@
+C:\Репозитории\C#\Граф\Граф\bin\Debug\Граф.exe.config
+C:\Репозитории\C#\Граф\Граф\bin\Debug\Граф.exe
+C:\Репозитории\C#\Граф\Граф\bin\Debug\Граф.pdb
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.csprojAssemblyReference.cache
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.Form1.resources
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.Properties.Resources.resources
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.csproj.GenerateResource.cache
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.exe
+C:\Репозитории\C#\Граф\Граф\obj\Debug\Граф.pdb
